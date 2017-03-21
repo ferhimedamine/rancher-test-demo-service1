@@ -1,0 +1,15 @@
+.catalog:
+  name: test1
+  version: ferhimedamine_demo-service1_test1_0.0.2_6_72e4ad4b
+  description: demo-service1
+  uuid: test1-1
+
+demo-service1-app:
+  scale: 1
+  health_check:
+    healthy_threshold: 2
+    response_timeout: 2000
+    port: 80
+    unhealthy_threshold: 2
+    interval: 10000
+    strategy: none

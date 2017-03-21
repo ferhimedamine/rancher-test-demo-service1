@@ -1,0 +1,9 @@
+demo-service1-app:
+  image: ferhimedamine/demo-service1:ferhimedamine_demo-service1_test1_0.0.2_6_72e4ad4b
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+    traefik.enable: 'true'
+    traefik.alias: service1
+    traefik.port: '80'
+    traefik.domain: test.cloudbuzz.io
