@@ -1,0 +1,15 @@
+.catalog:
+  name: feature-html
+  version: ferhimedamine_demo-service1_feature-html_0.0.2_2_fecaa360
+  description: demo-service1
+  uuid: feature-html-5
+
+demo-service1-app:
+  scale: 1
+  health_check:
+    healthy_threshold: 2
+    response_timeout: 2000
+    port: 80
+    unhealthy_threshold: 2
+    interval: 10000
+    strategy: none

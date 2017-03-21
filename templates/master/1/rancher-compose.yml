@@ -1,0 +1,15 @@
+.catalog:
+  name: master
+  version: v0.0.2
+  description: demo-service1
+  uuid: master-1
+
+demo-service1-app:
+  scale: 1
+  health_check:
+    healthy_threshold: 2
+    response_timeout: 2000
+    port: 80
+    unhealthy_threshold: 2
+    interval: 10000
+    strategy: none
