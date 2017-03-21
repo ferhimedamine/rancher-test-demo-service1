@@ -1,0 +1,9 @@
+{{ .Project }}-app:
+  image: {{ .Owner }}/{{ .Project }}:{{ .Tag }}
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+    traefik.enable: 'true'
+    traefik.alias: service1
+    traefik.port: '80'
+    traefik.domain: test.cloudbuzz.io
