@@ -1,0 +1,15 @@
+.catalog:
+  name: develop
+  version: ferhimedamine_demo-service1_develop_0.0.3_1_eeb9dfbb
+  description: demo-service1
+  uuid: develop-6
+
+demo-service1-app:
+  scale: 1
+  health_check:
+    healthy_threshold: 2
+    response_timeout: 2000
+    port: 80
+    unhealthy_threshold: 2
+    interval: 10000
+    strategy: none
